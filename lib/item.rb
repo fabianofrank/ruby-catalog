@@ -15,15 +15,15 @@ class Item
   end
 
   def can_be_archived?
-    publish_date > Time.new
+    Time.new.year - publish_date.year >= 10
   end
 
   def move_to_archive
-    @archived = true if can_be_archived?
-    puts @archived
+    @archived = false if can_be_archived?
   end
 
   private :can_be_archived?
 end
 
-var = Item.new('scifi', 'isaac azimov', 'something', 'foundation', '2021,12,31').move_to_archive
+var = Item.new('scifi', 'isaac azimov', 'something', 'foundation', '2011,12,31')
+puts var.move_to_archive
