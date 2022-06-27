@@ -24,6 +24,3 @@ class Item
 
   private :can_be_archived?
 end
-
-var = Item.new('scifi', 'isaac azimov', 'something', 'foundation', '2011,12,31')
-puts var.move_to_archive
