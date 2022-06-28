@@ -1,3 +1,3 @@
 def method
-  puts 'hello'
+  puts 'ho'
 end
