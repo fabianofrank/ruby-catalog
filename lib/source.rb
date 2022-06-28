@@ -9,6 +9,7 @@ class Source
     @items = []
   end
 
+  #   add function
   def add_item(item = Item.new())
     @items << item
     source << self
