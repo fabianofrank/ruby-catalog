@@ -1,5 +1,5 @@
-require_relative '../genre'
-require_relative '../music'
+require_relative '../lib/genre'
+require_relative '../lib/music'
 
 genre = Genre.new('Funk')
 
