@@ -12,20 +12,8 @@ describe Genre do
     end
 
     it 'should be able add_item(music) to the genre instace @items = []' do
-      classroom.add_student(student)
-      expect(student.classroom.label).to eq '1A'
+      genre.add_item(music)
+      expect(genre.items.length).to eq 1
     end
   end
 end
-
-
-
-
-
-
-
-puts music.genre
-
-music.genre = (genre)
-puts music.genre.name
-puts 
