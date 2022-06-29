@@ -8,6 +8,7 @@ class Book < Item
     super(genre, author, source, label, publish_date)
     @cover_state = cover_state
     @publisher = publisher
+    @publish_date = publish_date
     @label = label
   end
 
