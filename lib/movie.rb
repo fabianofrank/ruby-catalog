@@ -1,13 +1,19 @@
 require_relative 'item'
-
 class Movie < Item
-  def initialize(silet)
-    super()
-    # Boolean
-    @silet = silet
+  attr_reader :silent
+
+  def initialize(genre, source, label, publish_date, silent)
+    super(genre, source, label, publish_date, silent)
+    @silent = silent
+    @source = source
   end
 
-  # Movie method
+  def source=(source)
+    @source = source
+    source.items << self unless source.items.include?(self)
+  end
+
+  # Methods
   def can_be_archived?
     can_be_archived? || @silent == true
   end

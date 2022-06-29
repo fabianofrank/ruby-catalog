@@ -10,8 +10,8 @@ class Source
   end
 
   #   add function
-  def add_item(item = Item.new())
+  def add_item(item)
     @items << item
-    source << self
+    item.source = self
   end
 end
