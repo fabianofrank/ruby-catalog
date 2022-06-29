@@ -5,10 +5,11 @@ require_relative 'author'
 class Game < Item
   attr_accessor :multiplayer, :last_played_at
 
-  def initialize(multiplayer, last_played_at)
-    super()
+  def initialize(genre, source, label, publish_date, multiplayer)
+    super(genre, author, source, label, publish_date)
+    @author = author
     @multiplayer = multiplayer
-    @last_played_at = Time.new(last_played_at.to_i)
+    @last_played_at = nil
   end
 
   def can_be_archived?
