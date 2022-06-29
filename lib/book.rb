@@ -3,7 +3,7 @@ require_relative 'label'
 
 class Book < Item
   attr_accessor :cover_state, :publisher
-  
+
   def initialize(author, label, publish_date, cover_state, publisher: false)
     super(genre, author, source, label, publish_date)
     @cover_state = cover_state
@@ -12,11 +12,9 @@ class Book < Item
   end
 
   def can_be_archived?
-    if can_be_archived? || @cover_state == "bad"
-      true
-    else
-      false
-    end
+    can_be_archived? || @cover_state == 'bad'
+
+    false
   end
 
   def label=(label)
