@@ -1,7 +1,8 @@
 require_relative 'item'
 
 class Source
-  attr_accessor :source
+  attr_accessor :name, :items
+  attr_reader :item
 
   def initialize(name)
     @id = Random.rand(1..1000)
