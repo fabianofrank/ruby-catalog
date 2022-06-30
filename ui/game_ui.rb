@@ -26,7 +26,7 @@ class GameUi
       when 1 then add_game
       when 2 then list_games
       when 3 then list_authors
-      when 4 then
+      when 4
         save_data
         break
       else
@@ -64,7 +64,8 @@ class GameUi
 
   def save_data
     @games.each do |game|
-      @game_save << {'published_date' => game.publish_date, 'last_played_at' => game.last_played_at, 'multiplayer' => game.multiplayer, 'label' => game.label, 'author' => game.author.to_s}
+      @game_save << { 'published_date' => game.publish_date, 'last_played_at' => game.last_played_at,
+                      'multiplayer' => game.multiplayer, 'label' => game.label, 'author' => game.author.to_s }
     end
     @game_data.create_data(@game_save)
   end

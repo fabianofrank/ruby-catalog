@@ -4,7 +4,6 @@ require_relative './ui/game_ui'
 require_relative './ui/music_ui'
 
 class Main
-
   def initialize
     @book_ui = BookUi.new
     @music_ui = MusicUi.new

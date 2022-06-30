@@ -9,8 +9,8 @@ class GameData
   def read_data
     unless File.zero?('game_data.json')
       file = File.open 'game_data.json'
-        data = JSON.parse file.read
-        file.close
+      data = JSON.parse file.read
+      file.close
     end
     data
   end
