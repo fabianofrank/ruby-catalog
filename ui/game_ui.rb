@@ -58,14 +58,15 @@ class GameUi
   def list_games
     puts 'Here are all the games:'
     @games.map do |game|
-      puts "#{game.label} (#{game.publish_date}) - is multiplayer: #{game.multiplayer}"
+      puts "Name: #{game.label} - published date: (#{game.publish_date}) - is multiplayer: #{game.multiplayer}"
     end
   end
 
   def save_data
     @games.each do |game|
       @game_save << { 'published_date' => game.publish_date, 'last_played_at' => game.last_played_at,
-                      'multiplayer' => game.multiplayer, 'label' => game.label, 'author' => game.author.to_s }
+                      'multiplayer' => game.multiplayer, 'label' => game.label, 'author_name' => game.author.first_name,
+                      'author_lastname' => game.author.last_name }
     end
     @game_data.create_data(@game_save)
   end
@@ -73,13 +74,15 @@ class GameUi
   def load_data
     @game_data.read_data&.each do |game|
       @games << Game.new(game['published_date'], game['last_played_at'], game['multiplayer'], game['label'])
+      @author << Author.new(game['author_name'], game['author_lastname'])
+      @games.last.author = @author.last
     end
   end
 
   def list_authors
     puts 'Here are all the authors:'
     @author.map do |author|
-      puts "#{author.first_name} #{author.last_name}"
+      puts "Name: #{author.first_name} - Last Name: #{author.last_name}"
     end
   end
 end
