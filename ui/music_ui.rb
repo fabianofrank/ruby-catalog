@@ -43,6 +43,7 @@ class MusicUi
     end
   end
 
+  # SOLID
   def publish_date
     print 'Album publish date: [yyyy/mm/dd] '
     gets.chomp.strip
@@ -58,6 +59,7 @@ class MusicUi
     gets.chomp.strip.to_s.capitalize
   end
 
+  # SOLLID
   def add_album
     music = Music.new(publish_date, on_spotify: on_spotify)
     genre = Genre.new(album_genre)
