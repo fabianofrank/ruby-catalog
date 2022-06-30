@@ -35,6 +35,7 @@ class MovieUi
     source_data = Source.new(movie_source)
     @list_sources << source_data
     @all_movies << create_data
+    # Commented
     puts 'Movie added'
     run
   end
