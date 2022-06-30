@@ -1,7 +1,7 @@
 require_relative '../lib/game'
 
 RSpec.describe Game do
-  let(:game) { Game.new('2020-01-01', multiplayer: true) }
+  let(:game) { Game.new('2000-01-01', '2020-01-01', multiplayer: true) }
 
   context '#initialize' do
     it 'should initialize with a publish date' do

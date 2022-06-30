@@ -5,7 +5,7 @@ require_relative 'author'
 class Game < Item
   attr_accessor :multiplayer, :last_played_at
 
-  def initialize(last_played_at, multiplayer: false)
+  def initialize(publish_date, last_played_at, multiplayer: false)
     super(genre, author, source, label, publish_date)
     @author = author
     @multiplayer = multiplayer

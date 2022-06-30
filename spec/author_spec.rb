@@ -5,7 +5,7 @@ require_relative '../lib/game'
 ## testing for author's methods
 RSpec.describe Author do
   let(:author) { Author.new('John', 'Doe') }
-  let(:game) { Game.new('2022-01-01', multiplayer: true) }
+  let(:game) { Game.new('2000-01-01', '2022-01-01', multiplayer: true) }
 
   context '#initialize' do
     it 'should initialize with a first name' do

@@ -30,7 +30,7 @@ describe 'Label test' do
     end
 
     it 'Adding a label' do
-      book = Book.new('bad', publisher: true)
+      book = Book.new('2000-01-01', 'bad', publisher: true)
       label.add_item(book)
       expect(label.items).to eq([book])
     end

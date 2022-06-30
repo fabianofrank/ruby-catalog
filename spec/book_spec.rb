@@ -1,7 +1,7 @@
 require_relative '../lib/book'
 
 describe 'Book test' do
-  book = Book.new('bad', publisher: true)
+  book = Book.new('2000-01-01', 'bad', publisher: true)
 
   context 'New Book' do
     it 'should be a book' do
