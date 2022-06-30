@@ -57,6 +57,12 @@ $ rspec
 - Twitter: [@fed1k](https://twitter.com/FirdavsDev)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/firdavs-allamurotov/)
 
+👤 **Fernando Saldaña**
+
+- GitHub: [@fasaldana](https://github.com/fasaldana)
+- Twitter: [@Fernandosal98](https://twitter.com/Fernandosal98)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fernando-saldana-8bbb89228/)
+
 
 ## 🤝 Contributing
 
