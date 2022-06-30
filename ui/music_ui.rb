@@ -44,12 +44,12 @@ class MusicUi
   end
 
   def publish_date
-    print 'Album publish date: '
+    print 'Album publish date: [yyyy/mm/dd] '
     gets.chomp.strip
   end
 
   def on_spotify
-    print 'Is it on Spotify? [Y/N]: '
+    print 'Is it on Spotify? [y/n]: '
     gets.chomp.strip.to_s.downcase == 'y'
   end
 
