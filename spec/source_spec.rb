@@ -10,7 +10,7 @@ describe Source do
 
     it 'should add an item inside items array' do
       sample = Source.new('Firdavs')
-      new_movie = Movie.new('2022/10/31', silent: true)
+      new_movie = Movie.new('2022/10/31', 'Dafne', silent: true)
       sample.add_item(new_movie)
       expect(sample.items).to include(new_movie)
     end
