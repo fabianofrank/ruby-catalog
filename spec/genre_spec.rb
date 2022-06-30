@@ -3,7 +3,7 @@ require_relative '../lib/music'
 
 genre = Genre.new('Funk')
 
-music = Music.new('Anitta', 'Youtube', 'Poderosas', '2005-01-30')
+music = Music.new('2000-01-01', on_spotify: true)
 
 describe Genre do
   context 'class when instantiated' do

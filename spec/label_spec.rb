@@ -13,13 +13,13 @@ describe 'Label test' do
   describe 'Passing parameters' do
     context '#First Name' do
       it 'returns the correct first name' do
-        expect(label.f_name).to eq('First Name')
+        expect(label.title).to eq('First Name')
       end
     end
 
     context '#Last Name' do
       it 'returns the correct last name' do
-        expect(label.l_name).to eq('Last Name')
+        expect(label.color).to eq('Last Name')
       end
     end
   end
@@ -30,7 +30,7 @@ describe 'Label test' do
     end
 
     it 'Adding a label' do
-      book = Book.new('author', 'label', '2022-01-01', 'cover_state')
+      book = Book.new('2000-01-01', 'bad', publisher: true)
       label.add_item(book)
       expect(label.items).to eq([book])
     end
