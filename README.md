@@ -51,6 +51,12 @@ $ rspec
 - Twitter: [@fabianofrankk](https://twitter.com/fabianofrankk)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/fabianofrank/)
 
+👤 **Firdavs Allamurotov**
+
+- GitHub: [@fed1k](https://github.com/fed1k)
+- Twitter: [@fed1k](https://twitter.com/FirdavsDev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/firdavs-allamurotov/)
+
 
 ## 🤝 Contributing
 
