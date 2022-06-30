@@ -11,11 +11,7 @@ class Music < Item
   end
 
   def can_be_archived?
-    if can_be_archived? && on_spotify
-      true
-    else
-      false
-    end
+    super && on_spotify
   end
 
   def genre=(genre)
