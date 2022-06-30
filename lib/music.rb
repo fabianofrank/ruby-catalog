@@ -2,9 +2,9 @@ require_relative 'item'
 require_relative 'genre'
 
 class Music < Item
-  attr_reader :on_spotify
+  attr_accessor :on_spotify
 
-  def initialize(author, source, label, publish_date, on_spotify: false)
+  def initialize(on_spotify: false)
     super(genre, author, source, label, publish_date)
     @on_spotify = on_spotify
     @genre = genre
