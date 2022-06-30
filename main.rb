@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require_relative './ui/book_ui'
 require_relative './ui/movie_ui'
 require_relative './ui/game_ui'
@@ -27,7 +26,7 @@ class Main
         puts 'Thank you for using the Catalog of things App!'
         break
       else
-        puts "Don't say goodbye, bye, bye..."
+        puts 'Invalid selection, please try again'
       end
     end
   end
