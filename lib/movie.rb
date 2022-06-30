@@ -2,8 +2,8 @@ require_relative 'item'
 class Movie < Item
   attr_reader :silent
 
-  def initialize(genre, source, label, publish_date, silent)
-    super(genre, source, label, publish_date, silent)
+  def initialize(genre, author, label, publish_date, silent: false)
+    super(genre, author, source, label, publish_date)
     @silent = silent
     @source = source
   end
@@ -15,6 +15,6 @@ class Movie < Item
 
   # Methods
   def can_be_archived?
-    can_be_archived? || @silent == true
+    super || @silent == true
   end
 end
