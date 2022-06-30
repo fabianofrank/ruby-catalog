@@ -40,5 +40,3 @@ class MovieUi
     run
   end
 end
-member = MovieUi.new
-member.run

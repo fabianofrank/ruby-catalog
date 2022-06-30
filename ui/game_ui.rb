@@ -1,9 +1,12 @@
 require_relative '../lib/game'
+require_relative '../preservation/game_data'
 
 class GameUi
-  def initialize(games = [])
-    @games = games
+  def initialize
+    @games = []
     @author = []
+    @game_data = GameData.new
+    @game_save = []
   end
 
   def menu
@@ -23,7 +26,9 @@ class GameUi
       when 1 then add_game
       when 2 then list_games
       when 3 then list_authors
-      when 4 then break
+      when 4 then
+        save_data
+        break
       else
         puts 'Invalid selection, please try again'
       end
@@ -52,15 +57,28 @@ class GameUi
 
   def list_games
     puts 'Here are all the games:'
-    puts @games.map do |game|
-      "#{game.label} (#{game.publish_date}) - is multiplayer: #{game.multiplayer}"
+    @games.map do |game|
+      puts "#{game.label} (#{game.publish_date}) - is multiplayer: #{game.multiplayer}"
+    end
+  end
+
+  def save_data
+    @games.each do |game|
+      @game_save << {'published_date' => game.publish_date, 'last_played_at' => game.last_played_at, 'multiplayer' => game.multiplayer, 'label' => game.label, 'author' => game.author.to_s}
+    end
+    @game_data.create_data(@game_save)
+  end
+
+  def load_data
+    @game_data.read_data&.each do |game|
+      @games << Game.new(game['published_date'], game['last_played_at'], game['multiplayer'], game['label'])
     end
   end
 
   def list_authors
     puts 'Here are all the authors:'
-    puts @author.map do |author|
-      "#{author.first_name} #{author.last_name}"
+    @author.map do |author|
+      puts "#{author.first_name} #{author.last_name}"
     end
   end
 end

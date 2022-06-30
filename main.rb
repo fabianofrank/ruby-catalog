@@ -4,6 +4,14 @@ require_relative './ui/game_ui'
 require_relative './ui/music_ui'
 
 class Main
+
+  def initialize
+    @book_ui = BookUi.new
+    @music_ui = MusicUi.new
+    @game_ui = GameUi.new
+    @movie_ui = MovieUi.new
+  end
+
   def interface
     puts "\nPlease choose an option by entering a number:"
     puts '1 - Book Menu'
@@ -14,14 +22,15 @@ class Main
   end
 
   def menu
+    @game_ui.load_data
     loop do
       interface
       selection = gets.chomp.to_i
       case selection
-      when 1 then BookUi.new.run
-      when 2 then MusicUi.new.run
-      when 3 then GameUi.new.run
-      when 4 then MovieUi.new.run
+      when 1 then @book_ui.run
+      when 2 then @music_ui.run
+      when 3 then @game_ui.run
+      when 4 then @movie_ui.run
       when 5
         puts 'Thank you for using the Catalog of things App!'
         break
