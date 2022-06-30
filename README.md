@@ -51,6 +51,24 @@ $ rspec
 - Twitter: [@fabianofrankk](https://twitter.com/fabianofrankk)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/fabianofrank/)
 
+👤 **Firdavs Allamurotov**
+
+- GitHub: [@fed1k](https://github.com/fed1k)
+- Twitter: [@fed1k](https://twitter.com/FirdavsDev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/firdavs-allamurotov/)
+
+👤 **Fernando Saldaña**
+
+- GitHub: [@fasaldana](https://github.com/fasaldana)
+- Twitter: [@Fernandosal98](https://twitter.com/Fernandosal98)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fernando-saldana-8bbb89228/)
+
+👤 **Dangelo Arrivillaga**
+- GitHub: [
+@Dangelo Arrivillaga
+](https://github.com/Dangelo-JAN)
+- LinkedIn: [Soluciones Empresriales Dangelo Arrivillaga](https://www.linkedin.com/in/soluciones-empresariales-dangelo-arrivillaga-2a144718a/)
+
 
 ## 🤝 Contributing
 
