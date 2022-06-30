@@ -1,7 +1,7 @@
 require_relative '../lib/book'
 
 describe 'Book test' do
-  book = Book.new('Author 01', 'Label 01', '2022-01-01', 'bad')
+  book = Book.new('bad', publisher: true)
 
   context 'New Book' do
     it 'should be a book' do
@@ -10,24 +10,6 @@ describe 'Book test' do
   end
 
   describe 'Passing parameters' do
-    context '#Author' do
-      it 'returns the correct Author' do
-        expect(book.author).to eq('Author 01')
-      end
-    end
-
-    context '#Label' do
-      it 'returns the correct label' do
-        expect(book.label).to eq('Label 01')
-      end
-    end
-
-    context '#Publish Date' do
-      it 'returns the correct publish date' do
-        expect(book.publish_date).to eq('2022-01-01')
-      end
-    end
-
     context '#Cover State' do
       it 'returns the correct person' do
         expect(book.cover_state).to eq('bad')
@@ -44,10 +26,6 @@ describe 'Book test' do
   describe '#Label Method' do
     it 'has a label method' do
       expect(book).to respond_to(:label)
-    end
-
-    it 'push into lable items' do
-      expect(book.label).to eq('Label 01')
     end
   end
 end
