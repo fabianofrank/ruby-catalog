@@ -16,4 +16,9 @@ class Game < Item
     ## should return true if parent's method returns true AND if last_played_at is older than 2 years
     super && Time.new.year - last_played_at.year >= 2
   end
+
+  def author=(author)
+    @author = author
+    author.items << self unless author.items.include?(self)
+  end
 end
