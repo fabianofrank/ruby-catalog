@@ -36,6 +36,7 @@ class Main
 
   def menu
     load_ui
+
     loop do
       interface
       selection = gets.chomp.to_i

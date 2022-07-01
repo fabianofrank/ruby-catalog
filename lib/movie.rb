@@ -1,6 +1,6 @@
 require_relative 'item'
 class Movie < Item
-  attr_accessor :silent
+  attr_accessor :silent, :publish_date, :label
 
   def initialize(publish_date, label, silent: false)
     super(genre, author, source, label, publish_date)
