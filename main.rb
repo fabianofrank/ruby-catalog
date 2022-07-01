@@ -20,8 +20,22 @@ class Main
     puts '5 - Exit'
   end
 
-  def menu
+  def load_ui
     @game_ui.load_data
+    @book_ui.load_data
+    @music_ui.load_data
+    @movie_ui.load_data
+  end
+
+  def save_ui
+    @game_ui.save_data
+    @book_ui.save_data
+    @music_ui.save_data
+    @movie_ui.save_data
+  end
+
+  def menu
+    load_ui
     loop do
       interface
       selection = gets.chomp.to_i
@@ -32,7 +46,7 @@ class Main
       when 4 then @movie_ui.run
       when 5
         puts 'Thank you for using the Catalog of things App!'
-        @game_ui.save_data
+        save_ui
         break
       else
         puts 'Invalid selection, please try again'
