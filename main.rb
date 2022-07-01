@@ -22,6 +22,7 @@ class Main
 
   def menu
     @game_ui.load_data
+    @music_ui.load_data
     loop do
       interface
       selection = gets.chomp.to_i

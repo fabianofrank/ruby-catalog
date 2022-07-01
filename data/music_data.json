@@ -1,0 +1,12 @@
+[
+  {
+    "genre": null,
+    "publish_date": "0014-01-01 00:00:00 -0306",
+    "on_spotify": false
+  },
+  {
+    "genre": "#<Genre:0x0000562539afbc98>",
+    "publish_date": "2020-01-01 00:00:00 -0300",
+    "on_spotify": true
+  }
+]
