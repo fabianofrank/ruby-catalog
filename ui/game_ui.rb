@@ -26,9 +26,7 @@ class GameUi
       when 1 then add_game
       when 2 then list_games
       when 3 then list_authors
-      when 4
-        save_data
-        break
+      when 4 then break
       else
         puts 'Invalid selection, please try again'
       end
