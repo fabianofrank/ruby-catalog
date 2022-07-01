@@ -6,7 +6,7 @@ class MusicUi
   def initialize
     @album = []
     @genre = []
-    @music_save = []
+    @music_saved = []
     @music_data = MusicData.new
   end
 
@@ -27,7 +27,6 @@ class MusicUi
       when 2 then list_albums
       when 3 then list_genres
       when 4
-        save_data
         break
       else
         puts "\nInvalid selection, please try again"
@@ -77,15 +76,16 @@ class MusicUi
 
   def save_data
     @album.each do |album|
-      @music_save << { genre: album.genre.name, publish_date: album.publish_date, on_spotify: album.on_spotify }
+      @music_saved << { genre: album.genre.name, publish_date: album.publish_date, on_spotify: album.on_spotify }
     end
-    @music_data.create_data(@music_save)
+    @music_data.create_data(@music_saved)
   end
 
   def load_data
     @music_data.read_data&.each do |album|
       @album << Music.new(album['publish_date'], on_spotify: album['on_spotify'])
       @genre << Genre.new(album['genre'])
+      @album.last.genre = @genre.last
     end
   end
 end

@@ -33,6 +33,7 @@ class Main
       when 4 then @movie_ui.run
       when 5
         puts 'Thank you for using the Catalog of things App!'
+        @music_ui.save_data
         break
       else
         puts 'Invalid selection, please try again'

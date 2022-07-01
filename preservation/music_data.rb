@@ -8,7 +8,7 @@ class MusicData
 
   def read_data
     if !File.zero?('data/music_data.json') && File.exist?('data/music_data.json')
-        fetch = JSON.parse(File.read('data/music_data.json'))
+      fetch = JSON.parse(File.read('data/music_data.json'))
     end
     fetch
   end
