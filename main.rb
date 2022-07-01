@@ -22,6 +22,7 @@ class Main
 
   def menu
     @game_ui.load_data
+    @movie_ui.load_data
     loop do
       interface
       selection = gets.chomp.to_i
@@ -32,6 +33,7 @@ class Main
       when 4 then @movie_ui.run
       when 5
         puts 'Thank you for using the Catalog of things App!'
+        @movie_ui.save_data
         break
       else
         puts 'Invalid selection, please try again'
