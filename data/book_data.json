@@ -1,0 +1,20 @@
+[
+  {
+    "published_date": "date",
+    "cover_state": "cover",
+    "title": "title",
+    "color": "color"
+  },
+  {
+    "published_date": "dia",
+    "cover_state": "state",
+    "title": "titulo",
+    "color": "colores"
+  },
+  {
+    "published_date": "2015-01-01",
+    "cover_state": "GOOD",
+    "title": "GOT",
+    "color": "RED"
+  }
+]
