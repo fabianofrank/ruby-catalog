@@ -6,7 +6,7 @@
 ![screenshot](./catalog_of_my_things.png)
 
 ## Live Video
-You can check our video presentation of the project [here](https://youtu.be/)
+You can check our video presentation of the project [here](https://drive.google.com/file/d/1sjnZtCZxxG3EIhw72jlK-WFgGL7aeR0x/view?usp=sharing)
 
 ## Getting Started
 
@@ -64,9 +64,7 @@ $ rspec
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/fernando-saldana-8bbb89228/)
 
 👤 **Dangelo Arrivillaga**
-- GitHub: [
-@Dangelo Arrivillaga
-](https://github.com/Dangelo-JAN)
+- GitHub: [@Dangelo Arrivillaga](https://github.com/Dangelo-JAN)
 - LinkedIn: [Soluciones Empresriales Dangelo Arrivillaga](https://www.linkedin.com/in/soluciones-empresariales-dangelo-arrivillaga-2a144718a/)
 
 
